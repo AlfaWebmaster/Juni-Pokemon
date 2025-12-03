@@ -1,0 +1,105 @@
+/* ----------------------------- */
+/*      ESTILOS GENERALES        */
+/* ----------------------------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffcb05, #3b4cca);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #ffffffdd;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+/* ----------------------------- */
+/*          CONTROLES            */
+/* ----------------------------- */
+
+.controls {
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+select {
+    padding: 8px 12px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 14px;
+    margin-left: 10px;
+    background: #ef5350;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d32f2f;
+}
+
+/* ----------------------------- */
+/*     TARJETA DEL POKÉMON       */
+/* ----------------------------- */
+
+#pokemon-detalles {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    width: 350px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.pokemon-card img {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.pokemon-card h2 {
+    margin: 10px 0;
+    font-size: 26px;
+    color: #2b2b2b;
+}
+
+.pokemon-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pokemon-card li {
+    background: #f3f3f3;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
